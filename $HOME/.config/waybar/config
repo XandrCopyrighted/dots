@@ -1,0 +1,61 @@
+{
+"layer": "top",
+"position": "top",
+"height": 10,
+"margin-bottom":0,
+"margin-top":0,
+
+"modules-left": ["sway/workspaces"],
+"modules-center": ["tray"],
+"modules-right":  ["network","pulseaudio","battery","clock"],
+
+"battery": {
+  "states": {
+  "warning": 15,
+  "critical": 5
+  },
+  "format": "{icon}&#8239;{capacity}%",
+  "format-charging": "&#8239;{capacity}%",
+  "format-plugged": "&#8239;{capacity}%",
+  "format-alt": "{icon} {time}",
+  "format-icons": [""]
+},
+"tray": {
+    "icon-size": 16,
+    "spacing": 6
+},
+"clock": {
+    "locale": "C", 
+    "format": " {:%I:%M}",
+    "format-alt": " {:%b %d}" // Icon: calendar-alt
+},
+"network": {
+  "interval": 2,
+  "format-wifi": " {signalStrength}%",
+  "format-ethernet": "",
+  "format-linked": " {ipaddr}",
+  "format-disconnected": "  Disconnected",
+  "format-disabled": "  Disable",
+  "tooltip": false,
+  "max-length": 20,
+  "min-length": 6,
+  "format-alt": "{essid}",
+},
+"pulseaudio": {
+  // "scroll-step": 1, // %, can be a float
+  "format": "{icon} {volume}%",
+  "format-bluetooth": "{icon} {volume}%",
+  "format-bluetooth-muted": "  Muted",
+  "format-muted": "  Muted",
+  "format-icons": {
+    "headphone": "",
+    "hands-free": "",
+    "headset": "🎧",
+    "phone": "",
+    "portable": "",
+    "car": "",
+    "default": ["", "", ""]
+  },
+  "on-click": "pavucontrol"
+},
+}
