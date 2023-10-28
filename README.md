@@ -1,8 +1,8 @@
 ## DotFiles, Made by **DefenderXander** / **XanderFromFortnite** / **XandrCopyrighted**
-### DotFiles: v2 -> v2.5 (wip)
+### DotFiles: ~~v2.5~~ v2.1
 
 * WM: Sway
-* Fork: [7KIR7/dots](https://github.com/7KIR7/dots)
+* Fork: [7KIR7/dots](https://github.com/7KIR7/dots) *minimal*
 
 Notice: 
 * Font Awesome 5 is needed. (ttf-font-awesome-5)
@@ -10,18 +10,23 @@ Notice:
 
 Packages
 
-    waybar
-    swaybg
-    swaylock
-    wofi
-    pipewire
-    kitty
-    grimshot
+    Waybar
+    Swaybg
+    Swaylock
+    Wofi
+    Pipewire
+    Kitty
+    Grimshot
     wl-clipboard
 
 Optional Packages
 
-    bash-completion
-    ly
+    Bash-completion (.bashrc)
+    Polkit (sway/config)
 
-Recommend cursor: [Bibata](https://github.com/ful1e5/Bibata_Cursor)
+
+What I use for GTK theming:
+
+    Cursor: Bibata
+    Icon: MkOS
+    Theme: Orchis (DARK/COMPACT)
