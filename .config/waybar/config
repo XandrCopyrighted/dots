@@ -18,7 +18,7 @@
   "format-charging": "{icon}&#8239;{capacity}%",
   "format-plugged": "{icon}&#8239;{capacity}%",
   "tooltip": false,
-  "format-icons": [""]
+  "format-icons": ["󰁹"]
 },
 "tray": {
     "icon-size": 16,
@@ -26,31 +26,31 @@
 },
 "clock": {
     "locale": "C", 
-    "format": " {:%I:%M}",
-    "format-alt": " {:%b %d}"
+    "format": "󰅐  {:%I:%M}",
+    "format-alt": "  {:%b %d}"
 },
 "network": {
   "interval": 2,
-  "format-wifi": " {signalStrength}%",
-  "format-ethernet": "",
-  "format-disconnected": "  Disconnected",
-  "format-disabled": "  Disable",
+  "format-wifi": "󰤨   {signalStrength}%",
+  "format-ethernet": "󰈀",
+  "format-disconnected": "󰤭   Disconnected",
+  "format-disabled": "󰤭   Disable",
   "tooltip": false,
   "max-length": 20,
   "min-length": 6
 },
 "pulseaudio": {
-  "format": "  {volume}%",
-  "format-bluetooth": " {volume}%",
-  "format-bluetooth-muted": "  Muted",
-  "format-muted": "  Muted",
+  "format": "󰓃 {volume}%",
+  "format-bluetooth": "󰂰 {volume}%",
+  "format-bluetooth-muted": "󰂲  Muted",
+  "format-muted": "󰓄  Muted",
   "format-icons": {
-    "headphone": "",
-    "hands-free": "",
-    "headset": "",
-    "phone": "",
-    "portable": "",
-    "car": ""
+    "headphone": "󰋋",
+    "hands-free": "󰙌",
+    "headset": "󰋎",
+    "phone": "",
+    "portable": "󰜟",
+    "car": "󰄍"
   },
   "on-click": "pavucontrol"
  },
