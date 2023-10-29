@@ -1,5 +1,5 @@
 ## DotFiles, Made by **DefenderXander** / **XanderFromFortnite** / **XandrCopyrighted**
-### DotFiles: ~~v2.5~~ v2.1
+### DotFiles: v2.2
 
 * WM: Sway
 * Fork: [7KIR7/dots](https://github.com/7KIR7/dots) *minimal*
