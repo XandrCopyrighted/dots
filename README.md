@@ -5,7 +5,7 @@
 * Fork: [7KIR7/dots](https://github.com/7KIR7/dots) *minimal*
 
 Notice: 
-* Font Awesome 5 is needed. (ttf-font-awesome-5)
+* Any [Nerd Font](https://www.nerdfonts.com/) is required
 * This dotfiles was on a 1366x768 display, if your on a 1920x1080 screen and the waybar is too small, you can change the size of the waybar by going into the config file and edit **"height"**
 
 Packages
