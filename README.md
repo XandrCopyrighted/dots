@@ -1,4 +1,5 @@
 ## DotFiles, Made by **DefenderXander** / **XanderFromFortnite** / **XandrCopyrighted**
+![dotfiles](https://github.com/XandrCopyrighted/XandrCopyrighted/blob/main/pictures%20for%20repos%2C%20i%20guess/dotfiles.jpg)
 ### DotFiles: v2.2
 
 * WM: Sway
