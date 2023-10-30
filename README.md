@@ -6,8 +6,8 @@
 * Fork: [7KIR7/dots](https://github.com/7KIR7/dots) *minimal*
 
 Notice: 
-* Any [Nerd Font](https://www.nerdfonts.com/) is required
-* This dotfiles was on a 1366x768 display, if your on a 1920x1080 screen and the waybar is too small, you can change the size of the waybar by going into the config file and edit **"height"**
+* Any [Nerd Font](https://www.nerdfonts.com/) is required, this is needed for the waybar icons, you can also just download the [icons itself](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/NerdFontsSymbolsOnly.zip) rather than a font you probably won't use.
+* This dotfiles was made on a 1366x768 display, if your on a 1920x1080 screen and the waybar is too small, you can change the size of the waybar by going into the config file and edit **"height"**
 
 Packages
 
