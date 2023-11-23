@@ -1,9 +1,10 @@
-## DotFiles, Made by **DefenderXander** / **XanderFromFortnite** / **XandrCopyrighted**
+<h3 align="center">This dotfiles is a fork</h3>
+
 ![dotfiles](https://github.com/XandrCopyrighted/XandrCopyrighted/blob/main/pictures%20for%20repos%2C%20i%20guess/dotfiles.jpg)
-### DotFiles: v2.2
+### Version: 2.2.1
 
 * WM: Sway
-* Fork: [7KIR7/dots](https://github.com/7KIR7/dots) *minimal*
+* [7KIR7/dots](https://github.com/7KIR7/dots)
 
 Notice: 
 * Any [Nerd Font](https://www.nerdfonts.com/) is required, this is needed for the waybar icons, you can also just download the [icons itself](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/NerdFontsSymbolsOnly.zip) rather than a font you probably won't use.
