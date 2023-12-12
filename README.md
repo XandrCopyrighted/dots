@@ -1,34 +1,24 @@
-<h3 align="center">This dotfiles is a fork</h3>
-
-![dotfiles](https://github.com/XandrCopyrighted/XandrCopyrighted/blob/main/pictures%20for%20repos%2C%20i%20guess/dotfiles.jpg)
-### Version: 2.2.1
+![dots](https://raw.githubusercontent.com/XandrCopyrighted/XandrCopyrighted/main/pictures%20for%20repos%2C%20i%20guess/dots.jpg)
+### Version: 2.3
 
 * WM: Sway
-* [7KIR7/dots](https://github.com/7KIR7/dots)
 
 Notice: 
-* Any [Nerd Font](https://www.nerdfonts.com/) is required, this is needed for the waybar icons, you can also just download the [icons itself](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/NerdFontsSymbolsOnly.zip) rather than a font you probably won't use.
-* This dotfiles was made on a 1366x768 display, if your on a 1920x1080 screen and the waybar is too small, you can change the size of the waybar by going into the config file and edit **"height"**
+* This dots was made on a 1366x768 display, if your on a 1920x1080 screen (or above) and the waybar is too small, you can change the size of the waybar by going into the config file and edit **"height"**
 
 Packages
 
-    Waybar
-    Swaybg
-    Swaylock
-    Wofi
-    Pipewire
-    Kitty
-    Grimshot
-    wl-clipboard
+    Waybar (Bar)
+    Swaybg (Wallpaper)
+    Swaylock (Lock Screen)
+    Wofi (Launcher)
+    Kitty (Terminal)
+    Grim (Screenshot)
 
 Optional Packages
 
-    Bash-completion (.bashrc)
-    Polkit (sway/config)
+    wl-clipboard (clipboard, for grim)
 
-
-What I use for GTK theming:
-
-    Cursor: Bibata
-    Icon: MkOS
-    Theme: Orchis (DARK/COMPACT)
+* GTK Theme: [Mojave Dark](https://www.gnome-look.org/p/1252328/)
+* Icon Theme: [OS Catalina](https://www.gnome-look.org/p/1309810)
+* Cursor Theme: [Bibata Modern Ice](https://www.gnome-look.org/p/1197198)

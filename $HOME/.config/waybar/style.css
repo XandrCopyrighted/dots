@@ -1,0 +1,41 @@
+*{
+    font-family: CascadiaCode;
+    font-size: 13px;
+    min-height: 0;
+    color: white;
+}
+
+window#waybar {
+    background-color: #303446;
+    transition-duration: 0.5s;
+	border-bottom: 1px solid #414868;
+}
+
+#workspaces button {
+  background: #24283b;
+  color: #c0caf5;
+  border-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#workspaces button.focused {
+  background: #414868;
+}
+#workspaces button.persistent {
+  color: #414868;
+}
+#workspaces button:hover {
+  color: #c0caf5;
+  background: #414868;
+  box-shadow: inherit;
+}
+
+#tray,
+#pulseaudio, 
+#battery, 
+#clock, 
+#network {
+	padding: 0 8px;
+}
