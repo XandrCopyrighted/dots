@@ -216,9 +216,6 @@ gaps inner  5
 gaps outer  0
 focus_follows_mouse no
 
-# GTK Theme
-exec_always {
-  gsettings set org.gnome.desktop.interface gtk-theme "Mojave-Dark-solid"
-  gsettings set org.gnome.desktop.interface icon-theme "Os-Catalina-Night"
-  gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Ice"
+# Clipboard
+exec wl-paste -t text --watch clipman store &
 }
