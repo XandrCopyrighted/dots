@@ -17,7 +17,7 @@ Packages
 
 Optional Packages
 
-    wl-clipboard (clipboard, for grim)
+    wl-clipboard (clipboard)
 
 * GTK Theme: [Mojave Dark](https://www.gnome-look.org/p/1252328/)
 * Icon Theme: [OS Catalina](https://www.gnome-look.org/p/1309810)
