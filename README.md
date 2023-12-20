@@ -1,5 +1,5 @@
 ![dots](https://raw.githubusercontent.com/XandrCopyrighted/XandrCopyrighted/main/pictures%20for%20repos%2C%20i%20guess/dots.jpg)
-### Version: 2.3
+### Version: 2.3.1
 
 * WM: Sway
 

@@ -5,8 +5,8 @@
 "margin-bottom":0,
 "margin-top":0,
 
-"modules-left": ["sway/workspaces"],
-"modules-center": ["tray"],
+"modules-left": ["tray"],
+"modules-center": [],
 "modules-right":  ["battery","network","pulseaudio","clock"],
 
 "battery": {
