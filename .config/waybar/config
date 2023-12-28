@@ -3,7 +3,7 @@
     "height": 25,
     "modules-left": ["sway/workspaces", "tray"],
     "modules-center": ["sway/window"],
-    "modules-right": ["battery","network","pulseaudio","clock"],
+    "modules-right": ["battery","network","pulseaudio","clock","custom/spliter","idle_inhibitor"],
 
 "battery": {
   "states": {
@@ -43,5 +43,15 @@
   },
   "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
   "tooltip": false
-    }
+    },
+    "custom/spliter": {
+      "format": ""
+    },
+"idle_inhibitor": {
+  "format": "{icon}",
+  "format-icons": {
+     "activated": " ",
+     "deactivated": " "
+	}
+	}
 }
