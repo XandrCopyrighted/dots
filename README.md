@@ -1,6 +1,6 @@
 ### Version: 2.4, 23/12/23
 ![dots](https://raw.githubusercontent.com/XandrCopyrighted/XandrCopyrighted/main/pictures%20for%20repos%2C%20i%20guess/dots.jpg)
-<h3 align="center">GTK theme: https://www.gnome-look.org/p/1996675</h3>
+<h3 align="center">GTK theme: https://rebrand.ly/xXGTK</h3>
 
 Packages
 
