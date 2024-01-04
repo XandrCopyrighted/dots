@@ -11,7 +11,7 @@ Packages
 
 Optional Packages
 
-    grim (Screenshot, wl-clipboard needed)
+    grimshot (Screenshot, wl-clipboard needed)
     wl-clipboard
     swaylock
     swaybg (Wallpaper)
