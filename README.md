@@ -12,10 +12,11 @@ Packages
 
 Optional Packages
 
-    grim (Screenshot, wl-clipboard needed)
-    wl-clipboard
+    grim (Screenshot, wl-clipboard & slurp needed)
     xfce-polkit (Authentication Agent)
     autotiling-rs
+    mako (Notification)
+    bash-completion
 
 You can use `gnome-tweaks` to replace the theme/change the icons.
 

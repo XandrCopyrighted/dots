@@ -1,56 +1,41 @@
-### Variables
-#
-# Logo key. Use Mod1 for Alt.
 set $mod Mod4
 
-# Your preferred terminal emulator
-# Recommends: foot
-set $term kitty
+## Logo key. Use Mod1 for Alt.
 
-# Your preferred launcher
-# Recommends: rofi
-set $menu exec wofi --show=drun | xargs swaymsg exec --
+output * bg /mnt/backup/Pictures/Wallpapers/Desktop/Anime/Genshin Impact 4.jpg fill adaptive_sync on
 
-### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# Requires: desktop-backgrounds-compat, swaybg
+## If there is no wallpaper on your desktop, install desktop-backgrounds-compat
 
-  output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill adaptive_sync on
 # output HDMI-A-1 resolution 1920x1080 position 0,0
 
-# ^ You can get the names of your outputs by running: swaymsg -t get_outputs
-
-### Idle configuration
+## You can get the names of your outputs by running: swaymsg -t get_outputs
 
 exec swayidle -w \
    timeout 180 'swaylock -f -C ~/.config/swaylock/config' \
    timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
    timeout 600 'systemctl suspend' \
 
-### Input configuration
-#
-    # input "1267:12586:ELAN0504:01_04F3:312A_Touchpad" {
-       # tap enabled
-       # natural_scroll enabled
-       # middle_emulation enabled
-   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
+input "1267:12586:ELAN0504:01_04F3:312A_Touchpad" {
+	tap enabled
+	natural_scroll enabled
+	middle_emulation enabled
+}
 
-### Key bindings
+## You can get the names of your inputs by running: swaymsg -t get_inputs
+
+#----
+
 #
-# Basics:
+# Key bindings
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec kitty
 
     # Kill focused window
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+d exec wofi --show=drun | xargs swaymsg exec --
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -59,10 +44,10 @@ exec swayidle -w \
     # mouse button for dragging.
     floating_modifier $mod normal
 
-    # Reload the configuration file
+    # Reload sway
     bindsym $mod+Shift+c reload
 
-    # Exit sway (logs you out of your Wayland session)
+    # Exit sway
     bindsym $mod+Shift+e exec swaymsg exit
 
     # Lock your screen
@@ -78,7 +63,6 @@ exec swayidle -w \
 	set $right l
 
     # Move your focus around
-    bindsym $mod+$left focus left
     bindsym $mod+$down focus down
     bindsym $mod+$up focus up
     bindsym $mod+$right focus right
@@ -89,6 +73,7 @@ exec swayidle -w \
     bindsym $mod+Right focus right
 
     # Move the focused window with the same, but add Shift
+    bindsym $mod+$left focus left
     bindsym $mod+Shift+$left move left
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
@@ -112,6 +97,7 @@ exec swayidle -w \
     bindsym $mod+8 workspace number 8
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
+    
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2
@@ -123,8 +109,7 @@ exec swayidle -w \
     bindsym $mod+Shift+8 move container to workspace number 8
     bindsym $mod+Shift+9 move container to workspace number 9
     bindsym $mod+Shift+0 move container to workspace number 10
-    # Note: workspaces can have any name you want, not just numbers.
-    # We just use 1-10 as the default.
+
 #
 # Layout stuff:
 #
@@ -147,31 +132,22 @@ exec swayidle -w \
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
-
-    # Move focus to the parent container
-    bindsym $mod+a focus parent
-
 #
 # Resizing containers:
 #
 mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
     bindsym $left resize shrink width 10px
     bindsym $down resize grow height 10px
     bindsym $up resize shrink height 10px
     bindsym $right resize grow width 10px
-
-    # Ditto, with arrow keys
+    
+    ## arrow keys
     bindsym Left resize shrink width 10px
     bindsym Down resize grow height 10px
     bindsym Up resize shrink height 10px
     bindsym Right resize grow width 10px
-
-    # Return to default mode
-    bindsym Return mode "default"
+    
+    ## Return to default mode
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
@@ -179,14 +155,13 @@ bindsym $mod+r mode "resize"
 #
 # xxandr's dots:
 #
-
-# Start Waybar
-bar { 
-     swaybar_command waybar
+bar {
+	swaybar_command waybar
 }
 
 # Screenshot
-bindsym $mod+Shift+s exec grimshot copy output
+bindsym $mod+Shift+s exec grim - | wl-copy ## Full Screen
+bindsym print exec wl-copy < <(grim -g "$(slurp)" -) ## Region
 
 # Audio
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -197,7 +172,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Brightness
+# Brightness, I'm using a monitor, so I can't test this.
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
 
@@ -231,8 +206,11 @@ titlebar_padding 0
 for_window [title="^.*"] title_format ""
 default_floating_border none
 
-# Clipboard
-exec wl-paste -t text --watch clipman store &
-
 # Polkit
 exec /usr/lib/xfce-polkit/xfce-polkit
+
+# Notification
+exec mako ## Read mako's README.md if your not using systemd
+
+# GTK Theme
+exec_always gsettings set org.gnome.desktop.interface gtk-theme "Catppuccin-Frappe-Pink"
