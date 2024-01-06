@@ -1,0 +1,13 @@
+# Colors (https://github.com/catppuccin/mako)
+
+format=<b>%a:</b> %s\n%b
+margin=5
+background-color=#303446
+text-color=#c6d0f5
+border-color=#8caaee
+progress-color=over #414559
+anchor=bottom-right
+default-timeout=5000
+
+[urgency=high]
+border-color=#ef9f76
