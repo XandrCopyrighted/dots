@@ -1,21 +1,23 @@
-### Version: 2.4, 23/12/23
+### Version: 2.4.4, 5/1/24
 ![dots](https://raw.githubusercontent.com/XandrCopyrighted/XandrCopyrighted/main/pictures%20for%20repos%2C%20i%20guess/dots.jpg)
-<h3 align="center">GTK theme: https://rebrand.ly/xXGTK</h3>
 
 Packages
 
     Waybar
     Wofi (Launcher)
     Kitty (Terminal)
+    swaybg (Wallpaper)
     swayidle
+    swaylock
 
 Optional Packages
 
-    grimshot (Screenshot, wl-clipboard needed)
+    grim (Screenshot, wl-clipboard needed)
     wl-clipboard
-    swaylock
-    swaybg (Wallpaper)
     xfce-polkit (Authentication Agent)
     autotiling-rs
 
-You can use `gnome-tweaks` to apply the theme/icon/cursor you have downloaded.
+You can use `gnome-tweaks` to replace the theme/change the icons.
+
+If your like me and want to set `Fredoka` (The font waybar is using) to be the system's default font, open `gnome-tweaks` and set it like this:
+![Get Gnome'd](https://raw.githubusercontent.com/XandrCopyrighted/XandrCopyrighted/main/pictures%20for%20repos%2C%20i%20guess/dots_default_fonts.jpg)
