@@ -1,54 +1,57 @@
 {
-    "position": "bottom",
-    "height": 25,
-    "modules-left": ["sway/workspaces", "tray"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["battery","network","pulseaudio","clock","idle_inhibitor"],
+  "position": "bottom",
+  "height": 25,
+  "modules-left": ["sway/workspaces", "tray"],
+  "modules-center": ["sway/window"],
+  "modules-right": ["battery","network","pulseaudio","clock","idle_inhibitor"],
 
 "battery": {
-  "states": {
-  "warning": 15,
-  "critical": 5
-  },
-  "format": "{icon}&#8239;{capacity}%",
-  "format-charging": "{icon}&#8239;{capacity}%",
-  "format-plugged": "{icon}&#8239;{capacity}%",
-  "format-full": "{icon}&#8239;Full",
-  "tooltip": false,
-  "format-icons": ["", "", "", "", ""]
+"states": {
+"warning": 15,
+"critical": 5
+},
+"format": "{icon}&#8239;{capacity}%",
+"format-charging": "{icon}&#8239;{capacity}%",
+"format-plugged": "{icon}&#8239;{capacity}%",
+"format-full": "{icon}&#8239;Full",
+"tooltip": false,
+"format-icons": ["", "", "", "", ""]
 },
 "tray": {
-    "icon-size": 16,
-    "spacing": 6
+  "icon-size": 16,
+  "spacing": 6
 },
 "clock": {
-    "locale": "C", 
-    "format": "&#8239;{:%I:%M}",
-    "format-alt": "&#8239;{:%e/%m}"
+"tooltip-format": "<tt><small>{calendar}</small></tt>",
+  "locale": "C", 
+  "format": "&#8239;{:%I:%M}",
+  "format-alt": "&#8239;{:%H:%M}"
 },
 "network": {
-  "interval": 2,
-  "format-wifi": "&#8239;{signalStrength}%",
-  "format-ethernet": "&#8239;Ethernet",
-  "format-disconnected": "&#8239;Disconnected",
-  "format-disabled": "&#8239;Disabled",
-  "tooltip": false,
-  "on-click": "kitty .config/waybar/network-manager"
+"interval": 2,
+"format-wifi": "&#8239;{signalStrength}%",
+"format-ethernet": "&#8239;Ethernet",
+"format-disconnected": "&#8239;Disconnected",
+"format-disabled": "&#8239;Disabled",
+"tooltip": false,
+"on-click": "kitty .config/waybar/network-manager"
 },
 "pulseaudio": {
-  "format": "{icon}&#8239;{volume}",
-  "format-muted": "&#8239;Muted",
-  "format-icons": {
-    "default": ["", ""]
+"format": "{icon}&#8239;{volume}",
+"format-muted": "&#8239;Muted",
+"format-icons": {
+  "default": ["", ""]
+},
+"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+"on-click-right": "pavucontrol",
+"tooltip": false
   },
-  "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-  "tooltip": false
-    },
 "idle_inhibitor": {
-  "format": "{icon}",
-  "format-icons": {
-     "activated": " ",
-     "deactivated": " "
-	}
-    }
+"tooltip": false,
+"format": "{icon}",
+"format-icons": {
+   "activated": " ",
+   "deactivated": " "
+}
+}
 }
